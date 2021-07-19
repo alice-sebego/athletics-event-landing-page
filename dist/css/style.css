@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap");
-nav, nav ul {
+nav, nav ul, main {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+
+main #description h2 {
+  display: inline-block;
+  border-left: 3px solid #920b0b;
+  padding-left: .3em;
+  margin-bottom: 1em;
+  color: #920b0b; }
+
+main #description h2 span {
+  font-weight: bold;
+  text-transform: uppercase; }
 
 *, ::before, ::after {
   box-sizing: border-box;
@@ -85,6 +96,19 @@ nav {
     color: #920b0b;
     font-size: 5vw; }
 
+main {
+  padding: 2vh 2vw; }
+  main #description {
+    padding: 2vh; }
+    main #description h2 {
+      font-size: 3vw; }
+  main #illustration-desc {
+    text-align: center; }
+    main #illustration-desc img {
+      width: 80%;
+      height: auto;
+      filter: saturate(8.5); }
+
 @media screen and (max-width: 700px) {
   #logo {
     font-size: larger; }
@@ -105,7 +129,7 @@ nav {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      z-index: 2;
+      z-index: 5;
       transition: all .4s; }
       nav ul li {
         margin: 4vh 0; }
@@ -115,6 +139,14 @@ nav {
       color: #eee; }
       nav a:hover {
         color: #eee;
-        text-decoration: underline overline 3px solid #eee; } }
+        text-decoration: underline overline 3px solid #eee; }
+
+  main {
+    flex-wrap: wrap; }
+    main #description h2 {
+      font-size: 6vw; }
+    main #illustration-desc img {
+      width: 70%;
+      height: auto; } }
 
 /*# sourceMappingURL=style.css.map */

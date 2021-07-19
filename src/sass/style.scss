@@ -115,6 +115,35 @@ nav{
     }
 }
 
+
+main{
+    padding: 2vh 2vw;
+    @extend %display-flex;
+
+    #description{
+        padding: 2vh;
+
+        h2{
+            @extend %h2-custom;
+            font-size: 3vw;
+
+            span{
+                @extend %span-h2;
+            }
+        }
+    }
+
+    #illustration-desc{
+        text-align: center;
+        
+        img{
+            width: 80%;
+            height: auto;
+            filter: saturate(8.5);
+        }
+    }
+}
+
 @media screen and (max-width: 700px) {
 
     #logo{
@@ -127,6 +156,7 @@ nav{
 
     nav{
         padding-top: 0;
+        //position: sticky;
         
         ul{
             position: fixed;
@@ -139,7 +169,7 @@ nav{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            z-index: 2;
+            z-index: 5;
             transition: all .4s;
 
             li{
@@ -157,6 +187,26 @@ nav{
             &:hover{
                 color: $white-color;
                 text-decoration: underline overline 3px solid $white-color;
+            }
+        }
+    }
+
+    main{
+        flex-wrap: wrap;
+
+        #description{
+
+            h2{
+                font-size: 6vw;
+            }
+        }
+
+
+        #illustration-desc{
+            
+            img{
+                width: 70%;
+                height: auto;
             }
         }
     }

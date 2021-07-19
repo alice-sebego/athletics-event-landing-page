@@ -3,3 +3,16 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+%h2-custom{
+    display: inline-block;
+    border-left: 3px solid $primary-color;
+    padding-left: .3em;
+    margin-bottom: 1em;
+    color: $primary-color;
+}
+
+%span-h2{
+    font-weight: bold;
+    text-transform: uppercase;
+}
