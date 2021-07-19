@@ -1,6 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap");
+nav, nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 *, ::before, ::after {
   box-sizing: border-box;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: "Nunito", sans-serif; }
+
+h1, h2, h3 {
+  font-family: "Source Sans Pro", sans-serif; }
+
+header {
+  padding: 3vh 2vw; }
+
+nav {
+  width: 100%;
+  padding: 3vh 2vw;
+  margin-bottom: 2vh;
+  top: 0;
+  color: #272626; }
+  nav #logo {
+    font: bold 3vw "Source Sans Pro", sans-serif;
+    letter-spacing: .02em;
+    color: #920b0b; }
+    nav #logo::before {
+      content: "";
+      display: inline-flex;
+      width: 10%;
+      height: auto;
+      background: url(http://127.0.0.1:5500/dist/assets/logo-running.svg) no-repeat center/80% rgba(146, 11, 11, 0.95);
+      padding: .9em;
+      margin-right: .3em;
+      border-radius: 5%;
+      box-shadow: 0.1em 0.1em 0.2em rgba(39, 38, 38, 0.1); }
+  nav a {
+    color: #272626;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .8s ease-in; }
+    nav a:hover {
+      color: #920b0b;
+      text-decoration: underline overline 3px solid #920b0b; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      padding: 1em; }
+
+#nav-bar {
+  float: right;
+  display: none;
+  margin-right: 3vw; }
+  #nav-bar svg {
+    color: #920b0b;
+    font-size: 5vw; }
+
+@media screen and (max-width: 700px) {
+  #logo {
+    font-size: larger; }
+
+  #nav-bar {
+    display: block; }
+
+  nav {
+    padding-top: 0; }
+    nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #920b0b;
+      top: 10vh;
+      right: -100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all .4s; }
+      nav ul li {
+        margin: 4vh 0; }
+    nav ul.show {
+      right: 0; }
+    nav a {
+      color: #eee; }
+      nav a:hover {
+        color: #eee;
+        text-decoration: underline overline 3px solid #eee; } }
 
 /*# sourceMappingURL=style.css.map */
