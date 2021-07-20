@@ -15,6 +15,23 @@ main #description h2 span {
   font-weight: bold;
   text-transform: uppercase; }
 
+main #description a {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 2vh 0;
+  background: #920b0b;
+  color: #eee;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: .08em;
+  padding: .5em;
+  border-radius: .3em;
+  transition: all .3s ease-in; }
+  main #description a:hover {
+    background: #eee;
+    color: #920b0b;
+    box-shadow: 0.1em 0.1em 0.2em rgba(39, 38, 38, 0.3); }
+
 *, ::before, ::after {
   box-sizing: border-box;
   padding: 0;

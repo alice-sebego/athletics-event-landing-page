@@ -16,3 +16,23 @@
     font-weight: bold;
     text-transform: uppercase;
 }
+
+%link-btn{
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 2vh 0;
+    background: $primary-color;
+    color: $white-color;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .08em;
+    padding: .5em;
+    border-radius: .3em;
+    transition: all .3s ease-in;
+
+    &:hover{
+        background: $white-color;
+        color: $primary-color;
+        box-shadow: .1em .1em .2em rgba($color: $text-color, $alpha: 0.3);
+    }
+}

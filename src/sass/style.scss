@@ -136,6 +136,10 @@ main{
                 @extend %span-h2;
             }
         }
+
+        a{
+            @extend %link-btn;
+        }
     }
 
     #illustration-desc{
