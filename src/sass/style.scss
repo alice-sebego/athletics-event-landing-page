@@ -122,7 +122,7 @@ nav{
 
 
 main{
-    padding: 2vh 2vw;
+    padding: 2vh 4vw;
     @extend %display-flex;
 
     #description{
@@ -151,6 +151,71 @@ main{
             filter: saturate(8.5);
         }
     }
+}
+
+#gallery{
+    padding: 3vh 4vw;
+
+    #container-pic{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 100px);
+        grid-auto-flow: row;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: space-around;
+
+        .img-star{
+            border: 1px dotted #333;
+            background: crimson;
+        }
+
+        .item-a{
+            grid-column: 1;
+            grid-row: 1 / 3;
+        }
+
+        .item-b{
+            grid-column: 2;
+            grid-row: 1 / 5;
+        }
+
+        .item-c{
+            grid-column: 3;
+            grid-row: 1 / 3;
+        }
+
+        .item-d{
+            grid-column: 3;
+            grid-row: 3 / 5;
+        }
+
+        .item-e{
+            grid-column: 4;
+            grid-row: 1 / 3;
+        }
+
+        .item-f{
+            grid-column: 4;
+            grid-row: 3 / 6;
+        }
+
+        .item-g{
+            grid-column: 5;
+            grid-row: 1 / 3;
+        }
+
+        .item-h{
+            grid-column: 5;
+            grid-row: 3 / 6;
+        }
+
+        .item-i{
+            grid-column: 2 / 4;
+            grid-row: 5;
+        }
+    }
+
 }
 
 @media screen and (max-width: 700px) {

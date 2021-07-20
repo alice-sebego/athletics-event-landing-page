@@ -119,7 +119,7 @@ nav {
     font-size: 5vw; }
 
 main {
-  padding: 2vh 2vw; }
+  padding: 2vh 4vw; }
   main #description {
     padding: 2vh; }
     main #description h2 {
@@ -130,6 +130,47 @@ main {
       width: 80%;
       height: auto;
       filter: saturate(8.5); }
+
+#gallery {
+  padding: 3vh 4vw; }
+  #gallery #container-pic {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    grid-auto-flow: row;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: space-around; }
+    #gallery #container-pic .img-star {
+      border: 1px dotted #333;
+      background: crimson; }
+    #gallery #container-pic .item-a {
+      grid-column: 1;
+      grid-row: 1 / 3; }
+    #gallery #container-pic .item-b {
+      grid-column: 2;
+      grid-row: 1 / 5; }
+    #gallery #container-pic .item-c {
+      grid-column: 3;
+      grid-row: 1 / 3; }
+    #gallery #container-pic .item-d {
+      grid-column: 3;
+      grid-row: 3 / 5; }
+    #gallery #container-pic .item-e {
+      grid-column: 4;
+      grid-row: 1 / 3; }
+    #gallery #container-pic .item-f {
+      grid-column: 4;
+      grid-row: 3 / 6; }
+    #gallery #container-pic .item-g {
+      grid-column: 5;
+      grid-row: 1 / 3; }
+    #gallery #container-pic .item-h {
+      grid-column: 5;
+      grid-row: 3 / 6; }
+    #gallery #container-pic .item-i {
+      grid-column: 2 / 4;
+      grid-row: 5; }
 
 @media screen and (max-width: 700px) {
   #logo {
