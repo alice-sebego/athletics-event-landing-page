@@ -10,11 +10,11 @@
     padding-left: .3em;
     margin-bottom: 1em;
     color: $primary-color;
-}
 
-%span-h2{
-    font-weight: bold;
-    text-transform: uppercase;
+    span{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }
 
 %link-btn{
@@ -35,4 +35,10 @@
         color: $primary-color;
         box-shadow: .1em .1em .2em rgba($color: $text-color, $alpha: 0.3);
     }
+}
+
+%background-img-gallery{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
