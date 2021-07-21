@@ -14,7 +14,7 @@ main #description h2, #gallery #container-pic .item-i h2 {
     font-weight: bold;
     text-transform: uppercase; }
 
-main #description a {
+main #description a, #gallery #desc-gallery a {
   text-transform: uppercase;
   display: inline-block;
   margin: 2vh 0;
@@ -26,7 +26,7 @@ main #description a {
   padding: .5em;
   border-radius: .3em;
   transition: all .3s ease-in; }
-  main #description a:hover {
+  main #description a:hover, #gallery #desc-gallery a:hover {
     background: #eee;
     color: #920b0b;
     box-shadow: 0.1em 0.1em 0.2em rgba(39, 38, 38, 0.3); }
@@ -144,7 +144,8 @@ main {
     grid-auto-flow: row;
     column-gap: 10px;
     row-gap: 10px;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin-bottom: 8vh; }
     #gallery #container-pic .img-star {
       box-shadow: 0.1em 0.1em 0.2em rgba(39, 38, 38, 0.1); }
     #gallery #container-pic .item-a {
@@ -187,6 +188,8 @@ main {
       grid-row: 5; }
       #gallery #container-pic .item-i h2 {
         padding-top: .3em; }
+  #gallery #desc-gallery {
+    text-align: center; }
 
 @media screen and (max-width: 700px) {
   #logo {

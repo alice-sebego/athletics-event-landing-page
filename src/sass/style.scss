@@ -160,6 +160,7 @@ main{
         column-gap: 10px;
         row-gap: 10px;
         justify-content: space-around;
+        margin-bottom: 8vh;
 
         .img-star{
             //border: 1px dotted #333;
@@ -232,6 +233,14 @@ main{
                @extend %h2-custom; 
                padding-top: .3em;
             }
+        }
+    }
+
+    #desc-gallery{
+        text-align: center;
+
+        a{
+            @extend %link-btn;
         }
     }
 
