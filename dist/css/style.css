@@ -4,6 +4,11 @@ nav, nav ul, main {
   flex-direction: row;
   justify-content: space-between; }
 
+#slider #cmd button, #slider #circles {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 main #description h2, #gallery #container-pic .item-i h2, #trials h2, #sponsoring div h2 {
   display: inline-block;
   border-left: 3px solid #920b0b;
@@ -80,11 +85,12 @@ header {
 
 nav {
   width: 100%;
-  padding: 4vh 2vw;
+  padding: 3vh 2vw;
   margin-bottom: 2vh;
   top: 0;
   background-color: rgba(255, 255, 255, 0.8);
   position: fixed;
+  z-index: 2;
   color: #272626; }
   nav #logo {
     font: bold 3vw "Source Sans Pro", sans-serif;
@@ -217,7 +223,67 @@ main {
         width: 30%;
         height: auto; }
 
+#slider {
+  width: 75%;
+  height: 50vh;
+  margin: 4vh auto;
+  position: relative; }
+  #slider .content-slides {
+    width: 100%;
+    height: 100%; }
+    #slider .content-slides img {
+      width: 100%;
+      height: auto;
+      position: absolute; }
+  #slider #cmd {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+    #slider #cmd button {
+      position: absolute;
+      width: 8vw;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer; }
+      #slider #cmd button img {
+        width: 4vw;
+        position: relative; }
+    #slider #cmd button:nth-child(1) {
+      top: 50%;
+      transform: translateY(50%);
+      left: 1vw; }
+      #slider #cmd button:nth-child(1) img {
+        left: -4px; }
+    #slider #cmd button:nth-child(2) {
+      top: 50%;
+      transform: translateY(50%);
+      right: 1vw; }
+      #slider #cmd button:nth-child(2) img {
+        right: -4px; }
+  #slider #circles {
+    position: relative;
+    top: 20%;
+    left: 20%;
+    transform: translate(50%, 50%);
+    width: 30%;
+    height: 8vh; }
+    #slider #circles .circle {
+      width: 5vw;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      margin: 5px;
+      cursor: pointer;
+      outline: none;
+      border: 1px solid #920b0b; }
+    #slider #circles .active-circle {
+      background: #920b0b; }
+    #slider #circles .active {
+      opacity: 1 !important; }
+
 #sponsoring {
+  margin-top: 15vh;
   padding: 5vh 3vw; }
   #sponsoring div {
     text-align: center; }
