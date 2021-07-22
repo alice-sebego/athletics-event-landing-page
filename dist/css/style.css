@@ -234,7 +234,11 @@ main {
     #slider .content-slides img {
       width: 100%;
       height: auto;
-      position: absolute; }
+      position: absolute;
+      opacity: 0;
+      transition: opacity .2s ease-in-out; }
+    #slider .content-slides .active {
+      opacity: 1 !important; }
   #slider #cmd {
     top: 0;
     width: 100%;
@@ -279,8 +283,6 @@ main {
       border: 1px solid #920b0b; }
     #slider #circles .active-circle {
       background: #920b0b; }
-    #slider #circles .active {
-      opacity: 1 !important; }
 
 #sponsoring {
   margin-top: 15vh;

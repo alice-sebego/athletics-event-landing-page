@@ -294,9 +294,15 @@ main{
             width: 100%;
             height: auto;
             position: absolute;
-            // opacity: 0;
-            // transition: opacity .2s ease-in-out;
+            opacity: 0;
+            transition: opacity .2s ease-in-out;
+
         }
+
+        .active{
+            opacity: 1 !important;
+        }
+
     }
 
     #cmd{
@@ -365,9 +371,6 @@ main{
             background: $primary-color;
         }
 
-        .active{
-            opacity: 1 !important;
-        }
     }
 
 }
