@@ -12,9 +12,10 @@ const $circles = document.querySelectorAll(".circles");
 // Display Responsive Main Nav's item
 displayResponsiveNav($navBar, $ulNav);
 
-// Handle slider
+// --- Handle slider --- //
 let index = 0;
 
+// Handle slide with mouse's click
 const nextSlide = () => {
     if(index < 2){
 
@@ -50,3 +51,19 @@ const previousSlide = () => {
 }
 
 $previous.addEventListener("click", previousSlide);
+
+// Handle slide with keyboard
+const keypressed = event => {
+
+    switch (event.key) {
+        case "ArrowLeft":
+            previousSlide();
+            break;
+        case "ArrowRight":
+            nextSlide();
+            break;
+    }
+
+}
+
+document.addEventListener("keydown", keypressed);
