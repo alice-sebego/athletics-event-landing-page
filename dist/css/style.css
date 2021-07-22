@@ -187,9 +187,27 @@ main {
       grid-column: 2 / 4;
       grid-row: 5; }
       #gallery #container-pic .item-i h2 {
-        padding-top: .3em; }
+        margin: revert; }
   #gallery #desc-gallery {
     text-align: center; }
+
+#trials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 2vh 3vw;
+  margin: auto; }
+  #trials .trial-desc {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(221, 221, 221, 0.3);
+    padding: 3vh; }
+    #trials .trial-desc img {
+      width: 30%;
+      height: auto; }
 
 @media screen and (max-width: 700px) {
   #logo {
@@ -235,6 +253,11 @@ main {
       width: 70%;
       height: auto;
       position: relative;
-      z-index: -1; } }
+      z-index: -1; }
+
+  #gallery #container-pic {
+    grid-template-rows: repeat(5, 100px); }
+    #gallery #container-pic .title-gallery h2 {
+      font-size: 3vw; } }
 
 /*# sourceMappingURL=style.css.map */
