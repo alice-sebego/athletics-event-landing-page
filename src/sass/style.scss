@@ -283,7 +283,7 @@ main{
 #slider{
     width: 75%;
     height: 50vh;
-    margin: 4vh auto;
+    margin: 8vh auto 30vh;
     position: relative;
 
     .content-slides{
@@ -463,5 +463,32 @@ main{
             }
         }
     }
+
+    #sponsoring{
+        margin-top: 2vh;
+    }
     
+}
+
+@media screen and (min-width:700px) {
+    #slider{
+        #circles{
+            position: relative;
+            
+        }
+    }
+}
+
+@media screen and (min-width:1400px) {
+    #slider{
+        #circles{
+            position: relative;
+            top: 100%;
+            
+        }
+    }
+
+    #sponsoring {
+        margin-top: 40vh;
+    }
 }

@@ -226,7 +226,7 @@ main {
 #slider {
   width: 75%;
   height: 50vh;
-  margin: 4vh auto;
+  margin: 8vh auto 30vh;
   position: relative; }
   #slider .content-slides {
     width: 100%;
@@ -335,6 +335,19 @@ main {
   #gallery #container-pic {
     grid-template-rows: repeat(5, 100px); }
     #gallery #container-pic .title-gallery h2 {
-      font-size: 3vw; } }
+      font-size: 3vw; }
+
+  #sponsoring {
+    margin-top: 2vh; } }
+@media screen and (min-width: 700px) {
+  #slider #circles {
+    position: relative; } }
+@media screen and (min-width: 1400px) {
+  #slider #circles {
+    position: relative;
+    top: 100%; }
+
+  #sponsoring {
+    margin-top: 40vh; } }
 
 /*# sourceMappingURL=style.css.map */
