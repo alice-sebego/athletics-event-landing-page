@@ -30,6 +30,14 @@ const nextSlide = () => {
         $slidesImg[index].classList.add("active");
 
     }
+
+    for(let i = 0; i < $circles.length; i++){
+        if($circles[i].getAttribute("data-clic") - 1 === index){
+            $circles[i].classList.add("active-circle");
+        } else {
+            $circles[i].classList.remove("active-circle");
+        }
+    }
 }
 
 $next.addEventListener("click", nextSlide);
@@ -47,6 +55,14 @@ const previousSlide = () => {
         index = 2;
         $slidesImg[index].classList.add("active");
         
+    }
+
+    for(let i = 0; i < $circles.length; i++){
+        if($circles[i].getAttribute("data-clic") - 1 === index){
+            $circles[i].classList.add("active-circle");
+        } else {
+            $circles[i].classList.remove("active-circle");
+        }
     }
 }
 
@@ -80,5 +96,5 @@ $circles.forEach(circle => {
         index = this.getAttribute("data-clic") - 1;
         $slidesImg[index].classList.add("active");
     });
-    
+
 })
