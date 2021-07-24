@@ -4,7 +4,7 @@ nav, nav ul, main {
   flex-direction: row;
   justify-content: space-between; }
 
-#slider #cmd button, #slider #circles {
+#slider #cmd button, #circles {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -226,7 +226,7 @@ main {
 #slider {
   width: 75%;
   height: 50vh;
-  margin: 8vh auto 30vh;
+  margin: 8vh auto;
   position: relative; }
   #slider .content-slides {
     width: 100%;
@@ -266,26 +266,27 @@ main {
       right: 1vw; }
       #slider #cmd button:nth-child(2) img {
         right: -4px; }
-  #slider #circles {
-    position: relative;
-    top: 20%;
-    left: 20%;
-    transform: translate(50%, 50%);
-    width: 30%;
-    height: 8vh; }
-    #slider #circles .circle {
-      width: 5vw;
-      aspect-ratio: 1/1;
-      border-radius: 50%;
-      margin: 5px;
-      cursor: pointer;
-      outline: none;
-      border: 1px solid #920b0b; }
-    #slider #circles .active-circle {
-      background: #920b0b; }
+
+#circles {
+  position: relative;
+  top: 20%;
+  left: 20%;
+  transform: translate(50%, 50%);
+  width: 30%;
+  height: 8vh; }
+  #circles .circle {
+    width: 5vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #920b0b; }
+  #circles .active-circle {
+    background: #920b0b; }
 
 #sponsoring {
-  margin-top: 15vh;
+  margin-top: 10vh;
   padding: 5vh 3vw; }
   #sponsoring div {
     text-align: center; }
@@ -339,15 +340,5 @@ main {
 
   #sponsoring {
     margin-top: 2vh; } }
-@media screen and (min-width: 700px) {
-  #slider #circles {
-    position: relative; } }
-@media screen and (min-width: 1400px) {
-  #slider #circles {
-    position: relative;
-    top: 100%; }
-
-  #sponsoring {
-    margin-top: 40vh; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -283,7 +283,7 @@ main{
 #slider{
     width: 75%;
     height: 50vh;
-    margin: 8vh auto 30vh;
+    margin: 8vh auto;
     position: relative;
 
     .content-slides{
@@ -347,36 +347,36 @@ main{
         }
     }
 
-    #circles{
-        position: relative;
-        top: 20%;
-        left: 20%;
-        transform: translate(50%, 50%);
-        width: 30%;
-        height: 8vh;
-        @extend %flex-center;
+}
 
-        .circle{
-            width: 5vw;
-            aspect-ratio: 1/1;
-            border-radius: 50%;
-            margin: 5px;
-            cursor: pointer;
-            outline: none;
-            border: 1px solid $primary-color;
+#circles{
+    position: relative;
+    top: 20%;
+    left: 20%;
+    transform: translate(50%, 50%);
+    width: 30%;
+    height: 8vh;
+    @extend %flex-center;
 
-        }
+    .circle{
+        width: 5vw;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        margin: 5px;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid $primary-color;
 
-        .active-circle{
-            background: $primary-color;
-        }
+    }
 
+    .active-circle{
+        background: $primary-color;
     }
 
 }
 
 #sponsoring{
-    margin-top: 15vh;
+    margin-top: 10vh;
     padding: 5vh 3vw;
 
     div{
@@ -468,27 +468,4 @@ main{
         margin-top: 2vh;
     }
     
-}
-
-@media screen and (min-width:700px) {
-    #slider{
-        #circles{
-            position: relative;
-            
-        }
-    }
-}
-
-@media screen and (min-width:1400px) {
-    #slider{
-        #circles{
-            position: relative;
-            top: 100%;
-            
-        }
-    }
-
-    #sponsoring {
-        margin-top: 40vh;
-    }
 }
