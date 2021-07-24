@@ -1,4 +1,5 @@
 import { displayResponsiveNav } from "./util.js";
+import Slider from "./slider.js";
 
 // elements of DOM
 const $navBar = document.querySelector("#nav-bar");
@@ -13,88 +14,12 @@ const $circles = document.querySelectorAll(".circle");
 displayResponsiveNav($navBar, $ulNav);
 
 // --- Handle slider --- //
-let index = 0;
+const slider = new Slider($slidesImg, $next, $previous, $circles, 2);
 
-// Handle slide with mouse's click
-const nextSlide = () => {
-    if(index < 2){
+slider.next.addEventListener("click", slider.nextSlide);
 
-        $slidesImg[index].classList.remove("active");
-        index ++;
-        $slidesImg[index].classList.add("active");
-    
-    } else if(index === 2){
+slider.previous.addEventListener("click", slider.previousSlide);
 
-        $slidesImg[index].classList.remove("active");
-        index = 0;
-        $slidesImg[index].classList.add("active");
+document.addEventListener("keydown", slider.keypressed);
 
-    }
-
-    for(let i = 0; i < $circles.length; i++){
-        if($circles[i].getAttribute("data-clic") - 1 === index){
-            $circles[i].classList.add("active-circle");
-        } else {
-            $circles[i].classList.remove("active-circle");
-        }
-    }
-}
-
-$next.addEventListener("click", nextSlide);
-
-const previousSlide = () => {
-    if(index > 0){
-
-        $slidesImg[index].classList.remove("active");
-        index --;
-        $slidesImg[index].classList.add("active");
-    
-    } else if(index === 0){
-
-        $slidesImg[index].classList.remove("active");
-        index = 2;
-        $slidesImg[index].classList.add("active");
-        
-    }
-
-    for(let i = 0; i < $circles.length; i++){
-        if($circles[i].getAttribute("data-clic") - 1 === index){
-            $circles[i].classList.add("active-circle");
-        } else {
-            $circles[i].classList.remove("active-circle");
-        }
-    }
-}
-
-$previous.addEventListener("click", previousSlide);
-
-// Handle slide with keyboard
-const keypressed = event => {
-
-    switch (event.key) {
-        case "ArrowLeft":
-            previousSlide();
-            break;
-        case "ArrowRight":
-            nextSlide();
-            break;
-    }
-
-}
-
-document.addEventListener("keydown", keypressed);
-
-// Handle circles btn of slider
-$circles.forEach(circle => {
-
-    circle.addEventListener("click", function(){
-        for(let i = 0; i < $circles.length; i++){
-          $circles[i].classList.remove("active-circle");  
-        }
-        this.classList.add("active-circle");
-        $slidesImg[index].classList.remove("active");
-        index = this.getAttribute("data-clic") - 1;
-        $slidesImg[index].classList.add("active");
-    });
-
-})
+slider.handleCircles();
