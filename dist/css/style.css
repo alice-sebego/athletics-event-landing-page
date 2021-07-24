@@ -4,7 +4,7 @@ nav, nav ul, main {
   flex-direction: row;
   justify-content: space-between; }
 
-#slider #cmd button, #circles {
+#trials #programme, #slider #cmd button, #circles {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -19,7 +19,7 @@ main #description h2, #gallery #container-pic .item-i h2, #trials h2, #sponsorin
     font-weight: bold;
     text-transform: uppercase; }
 
-main #description a, #gallery #desc-gallery a {
+main #description a, #gallery #desc-gallery a, #trials #programme button {
   text-transform: uppercase;
   display: inline-block;
   margin: 2vh 0;
@@ -31,7 +31,7 @@ main #description a, #gallery #desc-gallery a {
   padding: .5em;
   border-radius: .3em;
   transition: all .3s ease-in; }
-  main #description a:hover, #gallery #desc-gallery a:hover {
+  main #description a:hover, #gallery #desc-gallery a:hover, #trials #programme button:hover {
     background: #eee;
     color: #920b0b;
     box-shadow: 0.1em 0.1em 0.2em rgba(39, 38, 38, 0.3); }
@@ -222,6 +222,16 @@ main {
       #trials #contains .trial-desc img {
         width: 30%;
         height: auto; }
+  #trials #programme {
+    padding: 2vh 2vw; }
+    #trials #programme button {
+      border: none; }
+    #trials #programme #info-programme {
+      margin: auto;
+      width: 80%;
+      border: 1px solid #ddd;
+      border-radius: .3em;
+      padding: 3vh 2vw; }
 
 #slider {
   width: 75%;

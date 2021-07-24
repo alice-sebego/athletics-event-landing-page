@@ -272,11 +272,33 @@ main{
             align-items: center;
             background: rgba($color: $grey-light, $alpha: .3);
             padding: 3vh;
+            
             img{
                 width: 30%;
                 height: auto;
             }
+
         }
+
+    }
+
+    #programme{
+        padding: 2vh 2vw;
+        @extend %flex-center;
+
+        button{
+            @extend %link-btn;
+            border: none;
+        }
+
+        #info-programme{
+            margin: auto;
+            width: 80%;
+            border: 1px solid $grey-light;
+            border-radius: .3em;
+            padding: 3vh 2vw;
+        }
+
     }
 }
 
