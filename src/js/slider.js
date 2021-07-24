@@ -1,7 +1,19 @@
+/**
+ * Handle all functions of event's user who navigate on the slider
+ * @class Slider
+ */
 export default class Slider{
 
     index = 0;
 
+    /**
+     * @constructor
+     * @param {HTMLAllCollection} imgSlides 
+     * @param {HTMLButtonElement} nextBtn 
+     * @param {HTMLButtonElement} previousBtn 
+     * @param {HTMLAllCollection} circles 
+     * @param {number} indexArrImg 
+     */
     constructor(imgSlides, nextBtn, previousBtn, circles, indexArrImg){
         this.imgSlides = imgSlides;
         this.nextBtn = nextBtn;
@@ -22,6 +34,10 @@ export default class Slider{
         return this.imgSlides;
     }
 
+    /**
+     * Display next image on the slider
+     * @method nextSlide
+     */
     nextSlide = () => {
         if(this.index < this.indexArrImg){
     
@@ -46,6 +62,10 @@ export default class Slider{
         }
     }
 
+    /**
+     * Display previous image on the slider
+     * @method previousSlide
+     */
     previousSlide = () => {
         if(this.index > 0){
     
@@ -70,6 +90,11 @@ export default class Slider{
         }
     }
 
+    /**
+     * Navigate on the slider with keyboard
+     * @method keypressed
+     * @param {Event} event 
+     */
     keypressed = event => {
 
         switch (event.key) {
@@ -83,6 +108,10 @@ export default class Slider{
     
     }
 
+    /**
+     * Navigate on the slider with click on a circle that display a img depending this data-clic
+     * @method handleCircles
+     */
     handleCircles = () => {
 
         let circlesList = this.circles;
@@ -100,7 +129,7 @@ export default class Slider{
                 imgList[indexImg].classList.remove("active");
                 indexImg = this.getAttribute("data-clic") - 1;
                 imgList[indexImg].classList.add("active");
-                
+
             });
         }
 
