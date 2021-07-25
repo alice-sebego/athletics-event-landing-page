@@ -4,7 +4,7 @@ nav, nav ul, main {
   flex-direction: row;
   justify-content: space-between; }
 
-#trials #programme, #slider #cmd button, #circles {
+#trials #planning, #slider #cmd button, #circles {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -19,7 +19,7 @@ main #description h2, #gallery #container-pic .item-i h2, #trials h2, #sponsorin
     font-weight: bold;
     text-transform: uppercase; }
 
-main #description a, #gallery #desc-gallery a, #trials #programme button {
+main #description a, #gallery #desc-gallery a, #trials #planning button {
   text-transform: uppercase;
   display: inline-block;
   margin: 2vh 0;
@@ -31,7 +31,7 @@ main #description a, #gallery #desc-gallery a, #trials #programme button {
   padding: .5em;
   border-radius: .3em;
   transition: all .3s ease-in; }
-  main #description a:hover, #gallery #desc-gallery a:hover, #trials #programme button:hover {
+  main #description a:hover, #gallery #desc-gallery a:hover, #trials #planning button:hover {
     background: #eee;
     color: #920b0b;
     box-shadow: 0.1em 0.1em 0.2em rgba(39, 38, 38, 0.3); }
@@ -222,21 +222,44 @@ main {
       #trials #contains .trial-desc img {
         width: 30%;
         height: auto; }
-  #trials #programme {
+  #trials #planning {
     padding: 2vh 2vw; }
-    #trials #programme button {
+    #trials #planning button {
       border: none; }
-    #trials #programme #info-programme {
+    #trials #planning #info-planning {
       margin: auto;
       width: 80%;
       border: 1px solid #ddd;
       border-radius: .3em;
-      padding: 3vh 2vw; }
+      padding: 3vh 2vw;
+      box-shadow: 0.2em 0.2em 1em rgba(39, 38, 38, 0.8); }
+    #trials #planning table {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      table-layout: fixed; }
+    #trials #planning table caption {
+      font-size: 1.5em;
+      margin: .5em 0 .75em; }
+    #trials #planning table tr {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      padding: .35em; }
+    #trials #planning table th,
+    #trials #planning table td {
+      padding: .625em;
+      text-align: center; }
+    #trials #planning table th {
+      font-size: .85em;
+      letter-spacing: .1em;
+      text-transform: uppercase; }
 
 #slider {
   width: 75%;
   height: 50vh;
-  margin: 8vh auto;
+  margin: 8vh auto 25vh;
   position: relative; }
   #slider .content-slides {
     width: 100%;
@@ -348,7 +371,46 @@ main {
     #gallery #container-pic .title-gallery h2 {
       font-size: 3vw; }
 
+  #info-planning table {
+    border: 0; }
+    #info-planning table caption {
+      font-size: 1.3em; }
+    #info-planning table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px; }
+    #info-planning table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em; }
+    #info-planning table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right; }
+    #info-planning table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase; }
+    #info-planning table td:last-child {
+      border-bottom: 0; }
+
+  #slider {
+    margin: 8vh auto 1vh; }
+
   #sponsoring {
     margin-top: 2vh; } }
+@media screen and (min-width: 1465px) {
+  #slider {
+    margin: 8vh auto 15vh; }
+
+  #sponsoring {
+    margin-top: 30vh; } }
 
 /*# sourceMappingURL=style.css.map */

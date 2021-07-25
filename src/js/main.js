@@ -23,9 +23,9 @@ document.addEventListener("keydown", slider.keypressed);
 
 slider.handleCircles();
 
-// Manage dialog elements
-const $progBtn = document.querySelector("#programme > button") 
-const $infoProgramme = document.querySelector("#info-programme");
+// Manage dialog elements for planning of meeting
+const $progBtn = document.querySelector("#planning > button") 
+const $infoProgramme = document.querySelector("#info-planning");
 const $close = document.querySelector("#close");
 
 $progBtn.addEventListener('click', () => {
