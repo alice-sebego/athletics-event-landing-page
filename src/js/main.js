@@ -40,3 +40,6 @@ $close.addEventListener('click', () => $infoProgramme.close());
 const $tdDatePlanning = document.querySelectorAll("#info-planning table td");
 
 customizePlanning($tdDatePlanning, "Date", "14/09/2021", "Discipline");
+
+// Add dynamically sponsor's logo on the DOM
+const $containSponsor = document.querySelector("#contain-sponsor");
