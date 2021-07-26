@@ -35,3 +35,18 @@ $progBtn.addEventListener('click', () => {
 });
 
 $close.addEventListener('click', () => $infoProgramme.close());
+
+// Manage display of date for planning's table
+const $tdDatePlanning = document.querySelectorAll("#info-planning table td");
+
+$tdDatePlanning.forEach( td => {
+    if(td.getAttribute("data-label") === "Date"){
+        
+        td.style.color = "white";
+        
+        td.textContent === "14/09/2021" ?
+        td.style.backgroundColor = "#bb0c0c":
+        td.style.backgroundColor = "#0c4ca0";
+
+    }
+});
