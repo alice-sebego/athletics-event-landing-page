@@ -37,6 +37,8 @@
     transition: all .3s ease-in;
 
     &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
         background: $white-color;
         color: $primary-color;
         box-shadow: .1em .1em .2em rgba($color: $text-color, $alpha: 0.3);

@@ -32,6 +32,8 @@ main #description a, #gallery #desc-gallery a, #trials #planning button {
   border-radius: .3em;
   transition: all .3s ease-in; }
   main #description a:hover, #gallery #desc-gallery a:hover, #trials #planning button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
     background: #eee;
     color: #920b0b;
     box-shadow: 0.1em 0.1em 0.2em rgba(39, 38, 38, 0.3); }
@@ -225,7 +227,8 @@ main {
   #trials #planning {
     padding: 2vh 2vw; }
     #trials #planning button {
-      border: none; }
+      border: none;
+      float: right; }
     #trials #planning #info-planning {
       margin: auto;
       width: 80%;

@@ -289,6 +289,7 @@ main{
         button{
             @extend %link-btn;
             border: none;
+            float: right;
         }
 
         #info-planning{
