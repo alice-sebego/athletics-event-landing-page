@@ -273,7 +273,7 @@ main {
 #slider {
   width: 75%;
   height: 50vh;
-  margin: 8vh auto 25vh;
+  margin: 8vh auto 22vh;
   position: relative; }
   #slider .content-slides {
     width: 100%;
@@ -320,7 +320,7 @@ main {
   left: 20%;
   transform: translate(50%, 50%);
   width: 30%;
-  height: 8vh; }
+  height: 1vh; }
   #circles .circle {
     width: 5vw;
     aspect-ratio: 1/1;
@@ -337,6 +337,9 @@ main {
   padding: 5vh 3vw; }
   #sponsoring div {
     text-align: center; }
+
+#contain-sponsor {
+  padding: 5vh 3vw; }
 
 @media screen and (max-width: 700px) {
   #logo {

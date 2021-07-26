@@ -1,4 +1,4 @@
-import { displayResponsiveNav } from "./util.js";
+import { displayResponsiveNav, customizePlanning } from "./util.js";
 import Slider from "./slider.js";
 
 // Display Responsive Main Nav's item
@@ -39,18 +39,4 @@ $close.addEventListener('click', () => $infoProgramme.close());
 // Manage display of date for planning's table
 const $tdDatePlanning = document.querySelectorAll("#info-planning table td");
 
-$tdDatePlanning.forEach( td => {
-    if(td.getAttribute("data-label") === "Date"){
-        
-        td.style.color = "white";
-        
-        td.textContent === "14/09/2021" ?
-        td.style.backgroundColor = "#bb0c0c":
-        td.style.backgroundColor = "#0c4ca0";
-
-    }
-
-    if(td.getAttribute("data-label") === "Discipline"){
-        td.style.fontWeight = "bold";
-    }
-});
+customizePlanning($tdDatePlanning, "Date", "14/09/2021", "Discipline");

@@ -13,6 +13,7 @@ h1, h2, h3{
     font-family: $font-stack;
 }
 
+// HEADER
 header{
     padding: 3vh 2vw;
 
@@ -123,6 +124,7 @@ nav{
     }
 }
 
+// PRESENTATION
 main{
     padding: 2vh 4vw;
     @extend %display-flex;
@@ -151,6 +153,7 @@ main{
     }
 }
 
+// PLANNING OF MEETING 
 #gallery{
     padding: 3vh 4vw;
 
@@ -344,10 +347,11 @@ main{
     }
 }
 
+// RETROSPECTIVE
 #slider{
     width: 75%;
     height: 50vh;
-    margin: 8vh auto 25vh;
+    margin: 8vh auto 22vh;
     position: relative;
 
     .content-slides{
@@ -419,7 +423,7 @@ main{
     left: 20%;
     transform: translate(50%, 50%);
     width: 30%;
-    height: 8vh;
+    height: 1vh;
     @extend %flex-center;
 
     .circle{
@@ -439,6 +443,7 @@ main{
 
 }
 
+// SPONSORING 
 #sponsoring{
     margin-top: 10vh;
     padding: 5vh 3vw;
@@ -449,6 +454,10 @@ main{
             @extend %h2-custom;
         }
     }
+}
+
+#contain-sponsor{
+    padding: 5vh 3vw;
 }
 
 @media screen and (max-width: 700px) {
