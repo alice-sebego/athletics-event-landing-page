@@ -1,5 +1,6 @@
 @import "./base";
 @import "./placeholder";
+@import "./mixin.scss";
 
 *, ::before, ::after{
     box-sizing: border-box;
@@ -290,6 +291,14 @@ main{
             @extend %link-btn;
             border: none;
             float: right;
+
+            &:nth-child(1):before{
+                @include custom-before('\f06e', $font-awesome-free);
+            }
+
+            &:nth-child(2):before{
+                @include custom-before('\f057', $font-awesome-free);
+            }
         }
 
         #info-planning{

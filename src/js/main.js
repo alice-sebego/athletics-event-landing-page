@@ -49,4 +49,8 @@ $tdDatePlanning.forEach( td => {
         td.style.backgroundColor = "#0c4ca0";
 
     }
+
+    if(td.getAttribute("data-label") === "Discipline"){
+        td.style.fontWeight = "bold";
+    }
 });

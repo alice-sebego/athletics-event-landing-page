@@ -1,0 +1,6 @@
+@mixin custom-before ($content, $font) {
+    content: $content;
+    font-family: $font;
+    padding: .5em;
+    font-size: 1.05em;
+}

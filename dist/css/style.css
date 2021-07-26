@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 nav, nav ul, main {
   display: flex;
   flex-direction: row;
@@ -229,6 +231,16 @@ main {
     #trials #planning button {
       border: none;
       float: right; }
+      #trials #planning button:nth-child(1):before {
+        content: "";
+        font-family: "Font Awesome 5 Free";
+        padding: .5em;
+        font-size: 1.05em; }
+      #trials #planning button:nth-child(2):before {
+        content: "";
+        font-family: "Font Awesome 5 Free";
+        padding: .5em;
+        font-size: 1.05em; }
     #trials #planning #info-planning {
       margin: auto;
       width: 80%;
