@@ -609,12 +609,42 @@ main{
     
 }
 
-@media screen and (min-width:1465px) {
+@media (min-width:1465px) {
+
+    main, #gallery, #trials, #sponsoring {
+        padding: 5vh 20vw;
+    }
+
     #slider{
+        width: 75%;
+        height: 30vh;
         margin: 8vh auto 15vh;
+        position: relative;
+    }
+
+    #circles{
+        bottom: -45vh;
     }
 
     #sponsoring{
-        margin-top: 30vh;
+        margin-top: 60vh;
+    }
+}
+
+@media (min-width:2000px) {
+    
+    #slider{
+        width: 75%;
+        height: 30vh;
+        margin: 8vh auto 15vh;
+        position: relative;
+    }
+
+    #circles{
+        bottom: -75vh;
+    }
+
+    #sponsoring{
+        margin-top: 90vh;
     }
 }
