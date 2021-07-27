@@ -454,11 +454,26 @@ main{
             @extend %h2-custom;
         }
     }
+
+    #contain-sponsor{
+        padding: 5vh 3vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        
+        .sponsor{
+            justify-self: center;
+            min-width: 75px;
+            max-width: 100px;
+            
+            img{
+                
+                width: 100%;
+            }
+        }
+    }
 }
 
-#contain-sponsor{
-    padding: 5vh 3vw;
-}
 
 @media screen and (max-width: 700px) {
 

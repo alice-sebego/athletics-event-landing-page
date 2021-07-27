@@ -337,9 +337,17 @@ main {
   padding: 5vh 3vw; }
   #sponsoring div {
     text-align: center; }
-
-#contain-sponsor {
-  padding: 5vh 3vw; }
+  #sponsoring #contain-sponsor {
+    padding: 5vh 3vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; }
+    #sponsoring #contain-sponsor .sponsor {
+      justify-self: center;
+      min-width: 75px;
+      max-width: 100px; }
+      #sponsoring #contain-sponsor .sponsor img {
+        width: 100%; }
 
 @media screen and (max-width: 700px) {
   #logo {
