@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
-nav, nav ul, main {
+nav, nav ul, main, #practical {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -349,6 +349,34 @@ main {
       #sponsoring #contain-sponsor .sponsor img {
         width: 100%; }
 
+#practical {
+  padding: 5vh 3vw;
+  border-top: 5px solid rgba(146, 11, 11, 0.3);
+  flex-wrap: wrap; }
+  #practical div {
+    width: 33%;
+    max-width: 200px;
+    padding: 1vh 1vw;
+    border: 1px solid #ddd; }
+    #practical div h3 {
+      text-align: center;
+      color: #920b0b; }
+  #practical #access > h3::before {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    padding: .5em;
+    font-size: 1.05em; }
+  #practical #food > h3::before {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    padding: .5em;
+    font-size: 1.05em; }
+  #practical #meteo > h3::before {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    padding: .5em;
+    font-size: 1.05em; }
+
 @media screen and (max-width: 700px) {
   #logo {
     font-size: 6vw; }
@@ -432,7 +460,11 @@ main {
   #sponsoring {
     margin-top: 2vh; } }
 @media (min-width: 1465px) {
-  main, #gallery, #trials, #sponsoring {
+  main,
+  #gallery,
+  #trials,
+  #sponsoring,
+  #practical {
     padding: 5vh 20vw; }
 
   #slider {

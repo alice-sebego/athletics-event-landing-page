@@ -474,6 +474,42 @@ main{
     }
 }
 
+// Practical Info
+#practical{
+    padding: 5vh 3vw;
+    border-top: 5px solid rgba($color: $primary-color, $alpha: .3); 
+    @extend %display-flex;
+    flex-wrap: wrap;
+
+    div{
+        width: 33%;
+        max-width: 200px;
+        padding: 1vh 1vw;
+        border: 1px solid $grey-light;
+
+        h3{
+            text-align: center;
+            color: $primary-color;
+
+        }
+        
+    }
+
+    #access > h3::before{
+        @include custom-before('\f4d7', $font-awesome-free);  
+    }
+
+    #food > h3::before{
+        @include custom-before('\f2e7', $font-awesome-free); 
+    }
+
+    #meteo > h3::before{
+        @include custom-before('\f6c4', $font-awesome-free); 
+    }
+
+
+}
+
 
 @media screen and (max-width: 700px) {
 
@@ -611,7 +647,11 @@ main{
 
 @media (min-width:1465px) {
 
-    main, #gallery, #trials, #sponsoring {
+    main, 
+    #gallery, 
+    #trials, 
+    #sponsoring, 
+    #practical {
         padding: 5vh 20vw;
     }
 
