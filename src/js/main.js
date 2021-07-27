@@ -1,5 +1,6 @@
 import { displayResponsiveNav, customizePlanning } from "./util.js";
 import Slider from "./slider.js";
+import { sponsorLogos } from "./asset.js";
 
 // Display Responsive Main Nav's item
 const $navBar = document.querySelector("#nav-bar");
@@ -43,3 +44,18 @@ customizePlanning($tdDatePlanning, "Date", "14/09/2021", "Discipline");
 
 // Add dynamically sponsor's logo on the DOM
 const $containSponsor = document.querySelector("#contain-sponsor");
+
+for (const [, logo] of Object.entries(sponsorLogos)) {
+    
+    let [url, alt] = Object.values(logo);
+    
+    const sponsor = document.createElement("div");
+    sponsor.setAttribute("class", "sponsor");
+    const img = document.createElement("img");
+    img.src = url;
+    img.setAttribute("alt", alt);
+    sponsor.appendChild(img);
+    $containSponsor.appendChild(sponsor);
+
+}
+
