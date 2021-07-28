@@ -31,8 +31,11 @@ const $close = document.querySelector("#close");
 
 $progBtn.addEventListener('click', () => {
     typeof $infoProgramme.showModal === "function" ?
-    $infoProgramme.showModal() :
-    console.error("L'API <dialog> n'est pas prise en charge par ce navigateur.");
+    (
+        $infoProgramme.showModal(),
+        $infoProgramme.scrollTop = 0 
+    ):(
+    console.error("L'API <dialog> n'est pas prise en charge par ce navigateur."));
 });
 
 $close.addEventListener('click', () => $infoProgramme.close());
