@@ -62,3 +62,18 @@ for (const [, logo] of Object.entries(sponsorLogos)) {
 
 }
 
+// Add current weather with Metaweather API
+const $meteo = document.querySelector("#weather");
+const urlAPI = "https://landingpageathle.herokuapp.com/https://www.metaweather.com/api/location/580778";
+
+// const fillDivWeather = (data) => {
+// }
+
+fetch(urlAPI)
+.then(response => {
+    if(response.ok){
+        const dataJson = response.json();
+        console.log(dataJson);
+        //fillDivWeather(dataJson);
+    }
+})

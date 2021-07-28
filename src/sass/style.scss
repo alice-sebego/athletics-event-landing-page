@@ -503,7 +503,7 @@ main{
         @include custom-before('\f2e7', $font-awesome-free); 
     }
 
-    #meteo > h3::before{
+    #weather > h3::before{
         @include custom-before('\f6c4', $font-awesome-free); 
     }
 

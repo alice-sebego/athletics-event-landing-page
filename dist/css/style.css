@@ -371,7 +371,7 @@ main {
     font-family: "Font Awesome 5 Free";
     padding: .5em;
     font-size: 1.05em; }
-  #practical #meteo > h3::before {
+  #practical #weather > h3::before {
     content: "";
     font-family: "Font Awesome 5 Free";
     padding: .5em;
