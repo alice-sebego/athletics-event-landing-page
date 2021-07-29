@@ -490,13 +490,31 @@ main{
         max-width: 200px;
         padding: 1vh 1vw;
         border: 1px solid $grey-light;
+        border-radius: .3em;
 
         h3{
             text-align: center;
             color: $primary-color;
+        }
 
+        img{
+            display: block;
+            width: 45%;
+            margin: 2vh auto;
+            padding: 1vh 1vw;
+            box-shadow: 0.2em 0.2em 0.3em rgba($color: $grey-light, $alpha: .8);
+            border-radius: .3em;
+        }
+
+        p, li{
+            font-size: smaller;
+            line-height: 1.8em;
         }
         
+    }
+
+    ul{
+        list-style-type: none;
     }
 
     #access > h3::before{
@@ -512,14 +530,6 @@ main{
     }
 
     #weather{
-        img{
-            display: block;
-            width: 45%;
-            margin: 2vh auto;
-            padding: 1vh 1vw;
-            box-shadow: 0.2em 0.2em 0.3em rgba($color: $grey-light, $alpha: .8);
-            border-radius: .3em;
-        }
 
         hr{
             width: 50%;
@@ -527,17 +537,11 @@ main{
             margin: 2vh auto;
         }
 
-        p{
-            font-size: smaller;
-            line-height: 1.8em;
-        }
-
         .temp{
             font-size: 1.5em;
             text-align: center;
         }
     }
-
 
 }
 

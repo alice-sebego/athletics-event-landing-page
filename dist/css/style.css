@@ -360,10 +360,23 @@ main {
     width: 33%;
     max-width: 200px;
     padding: 1vh 1vw;
-    border: 1px solid #ddd; }
+    border: 1px solid #ddd;
+    border-radius: .3em; }
     #practical div h3 {
       text-align: center;
       color: #920b0b; }
+    #practical div img {
+      display: block;
+      width: 45%;
+      margin: 2vh auto;
+      padding: 1vh 1vw;
+      box-shadow: 0.2em 0.2em 0.3em rgba(221, 221, 221, 0.8);
+      border-radius: .3em; }
+    #practical div p, #practical div li {
+      font-size: smaller;
+      line-height: 1.8em; }
+  #practical ul {
+    list-style-type: none; }
   #practical #access > h3::before {
     content: "";
     font-family: "Font Awesome 5 Free";
@@ -379,20 +392,10 @@ main {
     font-family: "Font Awesome 5 Free";
     padding: .5em;
     font-size: 1.05em; }
-  #practical #weather img {
-    display: block;
-    width: 45%;
-    margin: 2vh auto;
-    padding: 1vh 1vw;
-    box-shadow: 0.2em 0.2em 0.3em rgba(221, 221, 221, 0.8);
-    border-radius: .3em; }
   #practical #weather hr {
     width: 50%;
     display: block;
     margin: 2vh auto; }
-  #practical #weather p {
-    font-size: smaller;
-    line-height: 1.8em; }
   #practical #weather .temp {
     font-size: 1.5em;
     text-align: center; }
