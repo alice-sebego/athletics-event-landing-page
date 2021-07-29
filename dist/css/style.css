@@ -54,6 +54,9 @@ main #description a, #gallery #desc-gallery a, #trials #planning button {
 h1, h2, h3 {
   font-family: "Source Sans Pro", sans-serif; }
 
+.bold {
+  font-weight: bold; }
+
 header {
   padding: 3vh 2vw; }
   header video {
@@ -376,6 +379,23 @@ main {
     font-family: "Font Awesome 5 Free";
     padding: .5em;
     font-size: 1.05em; }
+  #practical #weather img {
+    display: block;
+    width: 45%;
+    margin: 2vh auto;
+    padding: 1vh 1vw;
+    box-shadow: 0.2em 0.2em 0.3em rgba(221, 221, 221, 0.8);
+    border-radius: .3em; }
+  #practical #weather hr {
+    width: 50%;
+    display: block;
+    margin: 2vh auto; }
+  #practical #weather p {
+    font-size: smaller;
+    line-height: 1.8em; }
+  #practical #weather .temp {
+    font-size: 1.5em;
+    text-align: center; }
 
 @media screen and (max-width: 700px) {
   #logo {

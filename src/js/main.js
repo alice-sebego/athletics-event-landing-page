@@ -66,14 +66,19 @@ for (const [, logo] of Object.entries(sponsorLogos)) {
 const $meteo = document.querySelector("#weather");
 const urlAPI = "https://landingpageathle.herokuapp.com/https://www.metaweather.com/api/location/580778";
 
-// const fillDivWeather = (data) => {
-// }
-
 fetch(urlAPI)
 .then(response => {
-    if(response.ok){
-        const dataJson = response.json();
-        console.log(dataJson);
-        //fillDivWeather(dataJson);
-    }
+    if(response.ok) return response.json();  
+})
+.then(result =>{
+    const unknown = "NC";
+    const today = result.consolidated_weather[0];
+    $meteo.innerHTML += `
+    <img src="https://www.metaweather.com/static/img/weather/${today.weather_state_abbr}.svg" alt="${today.weather_state_name}" />
+    <p>Min : ${today.min_temp.toFixed(1)} °C - Max : ${today.max_temp.toFixed(1)} °C</p>
+    <hr>
+    <p class="bold temp">Il fait ${today.the_temp.toFixed(1)} °C</p>
+    <p>Vitesse du vent : ${today.wind_speed.toFixed(2)} mph</p>
+    `
+    
 })
