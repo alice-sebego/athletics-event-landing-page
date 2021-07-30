@@ -561,6 +561,11 @@ footer{
     background: $primary-color;
     color: $white-color;
 
+    a{
+        color: $white-color;
+        text-decoration: underline overline rgba($color: $grey-light, $alpha: .3);
+    }
+
     #container-footer{
         @extend %section;
         display: flex;
@@ -568,6 +573,7 @@ footer{
         
         div{
             width: 33%;
+            padding: 2vh 2vw;
             h3{
                 display: block;
                 margin: 0 auto;
@@ -579,11 +585,38 @@ footer{
                 text-transform: uppercase;
 
             }
+
+            ul{
+                list-style-type: none;
+                li{
+                    display: block;
+                    margin: 2vh 2vw;
+                }
+            }
         }
 
         #newsletter form{
             display: flex;
             flex-direction: column;
+        }
+
+        #secundary-nav{
+            text-transform: uppercase;
+        }
+
+        #contact{
+            font-size: smaller;
+            
+            span{
+                text-transform: uppercase;
+            }
+
+            a{
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline overline rgba($color: $grey-light, $alpha: .3);
+                }
+            }
         }
 
     }

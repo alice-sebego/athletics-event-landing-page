@@ -409,11 +409,15 @@ footer {
   padding: 2vh 0;
   background: #920b0b;
   color: #eee; }
+  footer a {
+    color: #eee;
+    text-decoration: underline overline rgba(221, 221, 221, 0.3); }
   footer #container-footer {
     display: flex;
     flex-flow: row wrap; }
     footer #container-footer div {
-      width: 33%; }
+      width: 33%;
+      padding: 2vh 2vw; }
       footer #container-footer div h3 {
         display: block;
         margin: 0 auto;
@@ -423,9 +427,24 @@ footer {
         width: 70%;
         letter-spacing: .03em;
         text-transform: uppercase; }
+      footer #container-footer div ul {
+        list-style-type: none; }
+        footer #container-footer div ul li {
+          display: block;
+          margin: 2vh 2vw; }
     footer #container-footer #newsletter form {
       display: flex;
       flex-direction: column; }
+    footer #container-footer #secundary-nav {
+      text-transform: uppercase; }
+    footer #container-footer #contact {
+      font-size: smaller; }
+      footer #container-footer #contact span {
+        text-transform: uppercase; }
+      footer #container-footer #contact a {
+        text-decoration: none; }
+        footer #container-footer #contact a:hover {
+          text-decoration: underline overline rgba(221, 221, 221, 0.3); }
   footer p {
     text-align: center; }
 
