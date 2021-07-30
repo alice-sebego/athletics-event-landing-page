@@ -140,7 +140,7 @@ nav{
 
 // PRESENTATION
 main{
-    padding: 2vh 4vw;
+    @extend %section;
     @extend %display-flex;
 
     #description{
@@ -169,7 +169,7 @@ main{
 
 // PLANNING OF MEETING 
 #gallery{
-    padding: 3vh 4vw;
+    @extend %section;
 
     #container-pic{
         display: grid;
@@ -265,13 +265,12 @@ main{
 }
 
 #trials{
-    padding: 5vh 0;
-    box-shadow: 0 -.1em .3em rgba($color: $grey-light, $alpha: .8);
+    @extend %section;
+    box-shadow: 0 -0.1em 0.1em rgba($color: $grey-light, $alpha: .8);
     
     h2{
         display: block;
         margin: auto;
-        width: max-content;
         @extend %h2-custom;
     }
 
@@ -365,7 +364,7 @@ main{
 #slider{
     width: 75%;
     height: 50vh;
-    margin: 8vh auto 22vh;
+    margin: 8vh auto 5vh;;
     position: relative;
 
     .content-slides{
@@ -459,8 +458,8 @@ main{
 
 // SPONSORING 
 #sponsoring{
+    @extend %section;
     margin-top: 10vh;
-    padding: 5vh 3vw;
 
     div{
         text-align: center;
@@ -488,9 +487,9 @@ main{
     }
 }
 
-// Practical Info
+// PRACTICAL INFOS
 #practical{
-    padding: 5vh 3vw;
+    @extend %section;
     border-top: 5px solid rgba($color: $primary-color, $alpha: .3); 
     @extend %display-flex;
     flex-wrap: wrap;

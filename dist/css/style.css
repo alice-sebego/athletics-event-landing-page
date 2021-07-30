@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+main, #gallery, #trials, #sponsoring, #practical {
+  width: 75%;
+  margin: auto;
+  padding: 2vh 4vw; }
+
 nav, nav ul, main, #practical {
   display: flex;
   flex-direction: row;
@@ -142,82 +147,76 @@ nav {
     color: #920b0b;
     font-size: 5vw; }
 
-main {
-  padding: 2vh 4vw; }
-  main #description {
-    padding: 2vh; }
-    main #description h2 {
-      font-size: 3vw; }
-  main #illustration-desc {
-    text-align: center; }
-    main #illustration-desc img {
-      width: 80%;
-      height: auto;
-      filter: saturate(8.5); }
+main #description {
+  padding: 2vh; }
+  main #description h2 {
+    font-size: 3vw; }
+main #illustration-desc {
+  text-align: center; }
+  main #illustration-desc img {
+    width: 80%;
+    height: auto;
+    filter: saturate(8.5); }
 
-#gallery {
-  padding: 3vh 4vw; }
-  #gallery #container-pic {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 120px);
-    grid-auto-flow: row;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: space-around;
-    margin-bottom: 8vh; }
-    #gallery #container-pic .img-star {
-      box-shadow: 0.1em 0.1em 0.2em rgba(39, 38, 38, 0.1); }
-    #gallery #container-pic .item-a {
-      grid-column: 1;
-      grid-row: 1 / 3;
-      background-image: url("/dist/assets/2-athletes.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position-x: center; }
-    #gallery #container-pic .item-b {
-      grid-column: 2;
-      grid-row: 1 / 5;
-      background-image: url("/dist/assets/saut-hauteur.jpg"); }
-    #gallery #container-pic .item-c {
-      grid-column: 3;
-      grid-row: 1 / 3;
-      background-image: url("/dist/assets/course-sprint-1.jpg"); }
-    #gallery #container-pic .item-d {
-      grid-column: 3;
-      grid-row: 3 / 5;
-      background-image: url("/dist/assets/course-sprint-4.jpg"); }
-    #gallery #container-pic .item-e {
-      grid-column: 4;
-      grid-row: 1 / 3;
-      background-image: url("/dist/assets/saut-perche.jpg"); }
-    #gallery #container-pic .item-f {
-      grid-column: 4;
-      grid-row: 3 / 6;
-      background-image: url("/dist/assets/place-de-la-bourse-bordeaux.jpg"); }
-    #gallery #container-pic .item-g {
-      grid-column: 5;
-      grid-row: 1 / 3;
-      background-image: url("/dist/assets/course-sprint-2.jpg"); }
-    #gallery #container-pic .item-h {
-      grid-column: 5;
-      grid-row: 3 / 6;
-      background-image: url("/dist/assets/course-sprint-3.jpg"); }
-    #gallery #container-pic .item-i {
-      grid-column: 2 / 4;
-      grid-row: 5; }
-      #gallery #container-pic .item-i h2 {
-        margin: revert; }
-  #gallery #desc-gallery {
-    text-align: center; }
+#gallery #container-pic {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 120px);
+  grid-auto-flow: row;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: space-around;
+  margin-bottom: 8vh; }
+  #gallery #container-pic .img-star {
+    box-shadow: 0.1em 0.1em 0.2em rgba(39, 38, 38, 0.1); }
+  #gallery #container-pic .item-a {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-image: url("/dist/assets/2-athletes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center; }
+  #gallery #container-pic .item-b {
+    grid-column: 2;
+    grid-row: 1 / 5;
+    background-image: url("/dist/assets/saut-hauteur.jpg"); }
+  #gallery #container-pic .item-c {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    background-image: url("/dist/assets/course-sprint-1.jpg"); }
+  #gallery #container-pic .item-d {
+    grid-column: 3;
+    grid-row: 3 / 5;
+    background-image: url("/dist/assets/course-sprint-4.jpg"); }
+  #gallery #container-pic .item-e {
+    grid-column: 4;
+    grid-row: 1 / 3;
+    background-image: url("/dist/assets/saut-perche.jpg"); }
+  #gallery #container-pic .item-f {
+    grid-column: 4;
+    grid-row: 3 / 6;
+    background-image: url("/dist/assets/place-de-la-bourse-bordeaux.jpg"); }
+  #gallery #container-pic .item-g {
+    grid-column: 5;
+    grid-row: 1 / 3;
+    background-image: url("/dist/assets/course-sprint-2.jpg"); }
+  #gallery #container-pic .item-h {
+    grid-column: 5;
+    grid-row: 3 / 6;
+    background-image: url("/dist/assets/course-sprint-3.jpg"); }
+  #gallery #container-pic .item-i {
+    grid-column: 2 / 4;
+    grid-row: 5; }
+    #gallery #container-pic .item-i h2 {
+      margin: revert; }
+#gallery #desc-gallery {
+  text-align: center; }
 
 #trials {
-  padding: 5vh 0;
-  box-shadow: 0 -0.1em 0.3em rgba(221, 221, 221, 0.8); }
+  box-shadow: 0 -0.1em 0.1em rgba(221, 221, 221, 0.8); }
   #trials h2 {
     display: block;
-    margin: auto;
-    width: max-content; }
+    margin: auto; }
   #trials #contains {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -282,7 +281,7 @@ main {
 #slider {
   width: 75%;
   height: 50vh;
-  margin: 8vh auto 22vh;
+  margin: 8vh auto 5vh;
   position: relative; }
   #slider .content-slides {
     width: 100%;
@@ -342,8 +341,7 @@ main {
     background: #920b0b; }
 
 #sponsoring {
-  margin-top: 10vh;
-  padding: 5vh 3vw; }
+  margin-top: 10vh; }
   #sponsoring div {
     text-align: center; }
   #sponsoring #contain-sponsor {
@@ -359,7 +357,6 @@ main {
         width: 100%; }
 
 #practical {
-  padding: 5vh 3vw;
   border-top: 5px solid rgba(146, 11, 11, 0.3);
   flex-wrap: wrap; }
   #practical div {
