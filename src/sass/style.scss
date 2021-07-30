@@ -596,8 +596,39 @@ footer{
         }
 
         #newsletter form{
+            margin-top: 1vh;
             display: flex;
             flex-direction: column;
+
+            input{
+                padding: .3em;
+                margin: 1vh 0;
+            }
+
+            .rgpd{
+                font-size: small;
+                margin:1vh 0;
+            }
+
+            a{ 
+                @extend %custom-link;
+                font-weight: 600; 
+            }
+
+            input[type="submit"]{
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $white-color;
+                background: $black-color;
+                border: none;
+                border-radius: .3em;
+                padding: .5em;
+                letter-spacing: .08em;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
         }
 
         #secundary-nav{
@@ -611,12 +642,7 @@ footer{
                 text-transform: uppercase;
             }
 
-            a{
-                text-decoration: none;
-                &:hover{
-                    text-decoration: underline overline rgba($color: $grey-light, $alpha: .3);
-                }
-            }
+            a{ @extend %custom-link; }
         }
 
     }

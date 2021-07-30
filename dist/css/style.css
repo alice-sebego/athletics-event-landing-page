@@ -50,6 +50,11 @@ main #description a, #gallery #desc-gallery a, #trials #planning button {
   background-repeat: no-repeat;
   background-position-x: center; }
 
+footer #container-footer #newsletter form a, footer #container-footer #contact a {
+  text-decoration: none; }
+  footer #container-footer #newsletter form a:hover, footer #container-footer #contact a:hover {
+    text-decoration: underline overline rgba(221, 221, 221, 0.3); }
+
 *, ::before, ::after {
   box-sizing: border-box;
   padding: 0;
@@ -433,18 +438,34 @@ footer {
           display: block;
           margin: 2vh 2vw; }
     footer #container-footer #newsletter form {
+      margin-top: 1vh;
       display: flex;
       flex-direction: column; }
+      footer #container-footer #newsletter form input {
+        padding: .3em;
+        margin: 1vh 0; }
+      footer #container-footer #newsletter form .rgpd {
+        font-size: small;
+        margin: 1vh 0; }
+      footer #container-footer #newsletter form a {
+        font-weight: 600; }
+      footer #container-footer #newsletter form input[type="submit"] {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #eee;
+        background: #0f0f0f;
+        border: none;
+        border-radius: .3em;
+        padding: .5em;
+        letter-spacing: .08em; }
+        footer #container-footer #newsletter form input[type="submit"]:hover {
+          cursor: pointer; }
     footer #container-footer #secundary-nav {
       text-transform: uppercase; }
     footer #container-footer #contact {
       font-size: smaller; }
       footer #container-footer #contact span {
         text-transform: uppercase; }
-      footer #container-footer #contact a {
-        text-decoration: none; }
-        footer #container-footer #contact a:hover {
-          text-decoration: underline overline rgba(221, 221, 221, 0.3); }
   footer p {
     text-align: center; }
 

@@ -56,3 +56,10 @@
     background-repeat: no-repeat;
     background-position-x: center;
 }
+
+%custom-link{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline overline rgba($color: $grey-light, $alpha: .3);
+    }
+}
