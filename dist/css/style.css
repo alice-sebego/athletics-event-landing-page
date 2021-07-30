@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
-main, #gallery, #trials, #sponsoring, #practical {
+main, #gallery, #trials, #sponsoring, #practical, footer #container-footer {
   width: 75%;
   margin: auto;
   padding: 2vh 4vw; }
@@ -402,6 +402,31 @@ main #illustration-desc {
     margin: 2vh auto; }
   #practical #weather .temp {
     font-size: 1.5em;
+    text-align: center; }
+
+footer {
+  margin-top: 5vh;
+  padding: 2vh 0;
+  background: #920b0b;
+  color: #eee; }
+  footer #container-footer {
+    display: flex;
+    flex-flow: row wrap; }
+    footer #container-footer div {
+      width: 33%; }
+      footer #container-footer div h3 {
+        display: block;
+        margin: 0 auto;
+        border-bottom: 1px dotted #ddd;
+        text-align: center;
+        padding-bottom: 1vh;
+        width: 70%;
+        letter-spacing: .03em;
+        text-transform: uppercase; }
+    footer #container-footer #newsletter form {
+      display: flex;
+      flex-direction: column; }
+  footer p {
     text-align: center; }
 
 @media screen and (max-width: 700px) {

@@ -555,6 +555,44 @@ main{
 
 }
 
+footer{
+    margin-top: 5vh;
+    padding: 2vh 0;
+    background: $primary-color;
+    color: $white-color;
+
+    #container-footer{
+        @extend %section;
+        display: flex;
+        flex-flow: row wrap;
+        
+        div{
+            width: 33%;
+            h3{
+                display: block;
+                margin: 0 auto;
+                border-bottom: 1px dotted $grey-light;
+                text-align: center;
+                padding-bottom: 1vh;
+                width: 70%;
+                letter-spacing: .03em;
+                text-transform: uppercase;
+
+            }
+        }
+
+        #newsletter form{
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
 
 @media screen and (max-width: 700px) {
 
