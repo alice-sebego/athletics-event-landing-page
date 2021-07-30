@@ -364,7 +364,7 @@ main{
 #slider{
     width: 75%;
     height: 50vh;
-    margin: 8vh auto 5vh;;
+    margin: 8vh auto 8vh;;
     position: relative;
 
     .content-slides{
@@ -394,7 +394,7 @@ main{
 
         button{
             position: absolute;
-            width: 8vw;
+            width: 5vw;
             aspect-ratio: 1/1;
             border-radius: 50%;
             @extend %flex-center;
@@ -402,7 +402,7 @@ main{
             cursor: pointer;
 
             img{
-                width: 4vw;
+                width: 3vw;
                 position: relative;
             }
         }
@@ -459,7 +459,8 @@ main{
 // SPONSORING 
 #sponsoring{
     @extend %section;
-    margin-top: 10vh;
+    margin-top: 15vh;
+    border-top: 5px solid rgba($color: $primary-color, $alpha: .3);
 
     div{
         text-align: center;

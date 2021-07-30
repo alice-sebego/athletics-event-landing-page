@@ -281,7 +281,7 @@ main #illustration-desc {
 #slider {
   width: 75%;
   height: 50vh;
-  margin: 8vh auto 5vh;
+  margin: 8vh auto 8vh;
   position: relative; }
   #slider .content-slides {
     width: 100%;
@@ -301,13 +301,13 @@ main #illustration-desc {
     position: absolute; }
     #slider #cmd button {
       position: absolute;
-      width: 8vw;
+      width: 5vw;
       aspect-ratio: 1/1;
       border-radius: 50%;
       border: none;
       cursor: pointer; }
       #slider #cmd button img {
-        width: 4vw;
+        width: 3vw;
         position: relative; }
     #slider #cmd button:nth-child(1) {
       top: 50%;
@@ -341,7 +341,8 @@ main #illustration-desc {
     background: #920b0b; }
 
 #sponsoring {
-  margin-top: 10vh; }
+  margin-top: 15vh;
+  border-top: 5px solid rgba(146, 11, 11, 0.3); }
   #sponsoring div {
     text-align: center; }
   #sponsoring #contain-sponsor {
