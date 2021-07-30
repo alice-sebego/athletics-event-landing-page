@@ -362,7 +362,7 @@ main #illustration-desc {
   flex-wrap: wrap; }
   #practical div {
     width: 33%;
-    max-width: 200px;
+    max-width: 250px;
     padding: 1vh 1vw;
     border: 1px solid #ddd;
     border-radius: .3em; }
