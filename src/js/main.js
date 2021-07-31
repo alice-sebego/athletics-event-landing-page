@@ -79,13 +79,12 @@ fetch(urlAPI)
     const today = result.consolidated_weather[0];
     $meteo.innerHTML += `
     <img src="https://www.metaweather.com/static/img/weather/${today.weather_state_abbr}.svg" alt="${today.weather_state_name}" />
-    <p class="bold" style="text-transform:capitalize">${setCurrentDate()}</p>
+    <p class="bold current-day">${setCurrentDate()}</p>
     <p>Min : ${today.min_temp.toFixed(1) ? today.min_temp.toFixed(1) : unknown} °C - Max : ${today.max_temp.toFixed(1) ? today.max_temp.toFixed(1) : unknown} °C</p>
     <hr>
     <p class="bold temp">Il fait ${today.the_temp.toFixed(1) ? today.the_temp.toFixed(1) : unknown} °C</p>
     <p>Vitesse du vent : ${today.wind_speed.toFixed(2) ? today.wind_speed.toFixed(2) : unknown} mph</p>
     `;
-   
 })
 .catch(error => {
     if(error === 404){
