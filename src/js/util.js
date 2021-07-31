@@ -37,3 +37,19 @@ export const customizePlanning = (elementCollection, date, content, title) => {
     });
 
 }
+
+/**
+ * Set current date
+ * @function setCurrentDate
+ * @returns {string} currentDate
+ */
+export const setCurrentDate = () => {
+    
+    const date = new Date(Date.now());
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    console.log(date.toLocaleDateString("fr-FR", options));
+    let currentDate = date.toLocaleDateString("fr-FR", options);
+
+    return currentDate;
+    
+}
