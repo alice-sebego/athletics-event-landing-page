@@ -2,9 +2,12 @@
   "name": "athletics-event-landing-page",
   "version": "1.0.0",
   "description": "Create a landing page that's describing a fictive athletics event",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/alice-sebego/athletics-event-landing-page/issues"
   },
-  "homepage": "https://github.com/alice-sebego/athletics-event-landing-page#readme"
+  "homepage": "https://github.com/alice-sebego/athletics-event-landing-page#readme",
+  "devDependencies": {
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }

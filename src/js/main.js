@@ -1,3 +1,4 @@
+import _ from "lodash";
 import { displayResponsiveNav, changeIconNav, handleClickLinkNav, customizePlanning, setCurrentDate } from "./util.js";
 import Slider from "./slider.js";
 import { sponsorLogos } from "./asset.js";
