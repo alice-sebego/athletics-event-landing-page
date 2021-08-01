@@ -911,6 +911,12 @@ footer{
         #contains{
             grid-template-columns: repeat(2, 1fr);
         }
+
+        #planning{
+            #info-planning {
+                width: 95%;
+            }
+        } 
     } 
 
     #slider {

@@ -623,6 +623,8 @@ footer {
 
   #trials #contains {
     grid-template-columns: repeat(2, 1fr); }
+  #trials #planning #info-planning {
+    width: 95%; }
 
   #slider {
     width: 100%; }
