@@ -5,8 +5,17 @@ import { sponsorLogos } from "./asset.js";
 // Display Responsive Main Nav's item
 const $navBar = document.querySelector("#nav-bar");
 const $ulNav = document.querySelector("nav > ul");
+const $liNav = document.querySelectorAll("nav > ul > li");
 
 displayResponsiveNav($navBar, $ulNav);
+
+for(let li of $liNav){
+    li.addEventListener("click", () => {
+        if($ulNav.classList.contains("show")){
+            $ulNav.classList.toggle("show");
+        }
+    });
+}
 
 // --- Handle slider --- //
 const $slidesImg = document.querySelectorAll(".content-slides > img");

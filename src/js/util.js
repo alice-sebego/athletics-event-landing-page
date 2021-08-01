@@ -7,12 +7,6 @@
 export const displayResponsiveNav = (navBar, nav) =>{
     navBar.addEventListener("click", () => {
         nav.classList.toggle("show");
-        // if(navBar.innerHTML === '<i class="fas fa-bars"></i>'){
-        //     navBar.innerHTML = <i class="fas fa-times"></i>    
-        // } else {
-        //     navBar.innerHTML = <i class="fas fa-bars"></i>
-        // }
-
     });
 }
 
