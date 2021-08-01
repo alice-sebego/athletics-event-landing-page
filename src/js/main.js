@@ -1,4 +1,4 @@
-import { displayResponsiveNav, customizePlanning, setCurrentDate } from "./util.js";
+import { displayResponsiveNav, changeIconNav, customizePlanning, setCurrentDate } from "./util.js";
 import Slider from "./slider.js";
 import { sponsorLogos } from "./asset.js";
 
@@ -8,6 +8,8 @@ const $ulNav = document.querySelector("nav > ul");
 const $liNav = document.querySelectorAll("nav > ul > li");
 
 displayResponsiveNav($navBar, $ulNav);
+
+changeIconNav($navBar, $ulNav);
 
 for(let li of $liNav){
     li.addEventListener("click", () => {

@@ -1,12 +1,30 @@
 /**
  * Display Responsive Main Nav's item
  * @function displayResponsiveNav
- * @param {HTMLElement} icon 
+ * @param {HTMLLabelElement} navBar 
  * @param {HTMLUListElement} nav 
  */
 export const displayResponsiveNav = (navBar, nav) =>{
     navBar.addEventListener("click", () => {
         nav.classList.toggle("show");
+    });
+}
+
+/**
+ * Change icon of responsive nav on user's click
+ * @function changeIconNav
+ * @param {HTMLLabelElement} navBar 
+ * @param {HTMLUListElement} ulNav 
+ */
+export const changeIconNav = (navBar, ulNav) =>{
+    navBar.addEventListener("click", () =>{
+        if(ulNav.classList.contains("show")){
+            navBar.innerHTML = "";
+            navBar.innerHTML += "<i class='fas fa-times'></i>";
+        } else {
+            navBar.innerHTML = "";
+            navBar.innerHTML += "<i class='fas fa-bars'></i>";
+        }
     });
 }
 
