@@ -6,6 +6,17 @@ It's a mini-project in order to improve my skills on JavaScript vanilla, SASS an
 
 ## Languages and Tools used :
 * HTML5, SASS, JavaScript
+* Webpack & Babel
+* [Metaweather API](https://www.metaweather.com/api/ "Get Data from Metaweather API")
+ 
 
-## CMD
+## Dependencies & CMD
 Watch change on SCSS files : `sass --watch src/sass/style.scss:dist/css/style.css`
+
+Install all dependencies : `npm install`
+
+Compile JS files : `npm run build`
+
+Watch change on JS files : `npm run watch`
+
+Run this project on localhost server : `npm run start`
