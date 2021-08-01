@@ -605,10 +605,8 @@ footer {
   #practical {
     width: 95%; }
 
-  nav {
-    width: 75%; }
-    nav #logo {
-      font-size: 6vw; }
+  nav #logo {
+    font-size: 6vw; }
 
   #nav-bar svg {
     font-size: 8vw; }
