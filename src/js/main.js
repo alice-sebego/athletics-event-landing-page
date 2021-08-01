@@ -1,4 +1,4 @@
-import { displayResponsiveNav, changeIconNav, customizePlanning, setCurrentDate } from "./util.js";
+import { displayResponsiveNav, changeIconNav, handleClickLinkNav, customizePlanning, setCurrentDate } from "./util.js";
 import Slider from "./slider.js";
 import { sponsorLogos } from "./asset.js";
 
@@ -11,13 +11,7 @@ displayResponsiveNav($navBar, $ulNav);
 
 changeIconNav($navBar, $ulNav);
 
-for(let li of $liNav){
-    li.addEventListener("click", () => {
-        if($ulNav.classList.contains("show")){
-            $ulNav.classList.toggle("show");
-        }
-    });
-}
+handleClickLinkNav($liNav, $ulNav);
 
 // --- Handle slider --- //
 const $slidesImg = document.querySelectorAll(".content-slides > img");

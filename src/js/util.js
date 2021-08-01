@@ -29,6 +29,22 @@ export const changeIconNav = (navBar, ulNav) =>{
 }
 
 /**
+ * Handle user's click on a main nav's link
+ * @function handleClickLinkNav
+ * @param {HTMLLIElement} liNav 
+ * @param {HTMLUListElement} ulNav 
+ */
+export const handleClickLinkNav = (liNav, ulNav) => {
+    for(let li of liNav){
+        li.addEventListener("click", () => {
+            if(ulNav.classList.contains("show")){
+                ulNav.classList.toggle("show");
+            }
+        });
+    }
+}
+
+/**
  * Manage appereance of elements collection on a table
  * @function customizePlanning
  * @param {HTMLAllCollection} elementCollection 
