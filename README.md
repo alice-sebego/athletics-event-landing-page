@@ -6,8 +6,9 @@ It's a mini-project in order to improve my skills on JavaScript vanilla, SASS an
 
 ## Languages and Tools used :
 * HTML5, SASS, JavaScript
-* Webpack & Babel
+* [AOS.js](https://github.com/michalsnik/aos "Get aos.js library")
 * [Metaweather API](https://www.metaweather.com/api/ "Get Data from Metaweather API")
+* Webpack & Babel
  
 
 ## Dependencies & CMD
