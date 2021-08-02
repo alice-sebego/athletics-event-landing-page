@@ -3,6 +3,15 @@ import { displayResponsiveNav, changeIconNav, handleClickLinkNav, customizePlann
 import Slider from "./slider.js";
 import { sponsorLogos } from "./asset.js";
 
+// Add AOS.js on elements of this project
+const $h2Collection = document.querySelectorAll("h2");
+$h2Collection.forEach(item => item.setAttribute("data-aos", "fade-right"));
+
+const $h3Practical = document.querySelectorAll("#practical > div h3");
+$h3Practical.forEach(item => item.setAttribute("data-aos", "flip-up"));
+
+AOS.init();
+
 // Display Responsive Main Nav's item
 const $navBar = document.querySelector("#nav-bar");
 const $ulNav = document.querySelector("nav > ul");
